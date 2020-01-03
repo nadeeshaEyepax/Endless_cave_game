@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+
+    <title>Endless Cave</title>
+
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: black;
+      }
+
+      #phaser-app{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      canvas{
+        width: 56%;
+        height: 100%;
+      }
+    </style>
+    <!-- Libraries -->
+    <script src="libs/phaser.min.js"></script>
+
+    <!-- Prefabs -->
+    <script src="prefabs/Helper.js"></script>
+    <script src="prefabs/Text.js"></script>
+
+    <!-- Scenes -->
+    <script src="scenes/boot.js"></script>
+    <script src="scenes/preload.js"></script>
+    <script src="scenes/menu.js"></script>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+
+  </head>
+
+  <body>
+    <!-- This code is in the public domain. Enjoy! -->
+    <div id="phaser-app"></div>
+
+  </body>
+
+</html>
